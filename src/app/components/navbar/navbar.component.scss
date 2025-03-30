@@ -1,5 +1,6 @@
   .content {
     width: 100%;
+    height: clamp(70px,10vw,120px);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -69,7 +70,8 @@
         background-image: url(/assets/imgs/svg/botao-background.svg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.25);
+        
         gap: 3px;
   
         a {
