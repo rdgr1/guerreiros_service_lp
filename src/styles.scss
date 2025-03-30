@@ -19,15 +19,23 @@
     font-weight: 700;
     src: url(/assets/fonts/Gotham-Bold.otf);
 }
+:root{
+    --font-color: #FFFFFF;   
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "";
+    font-family: 'Gotham';
+    color: var(--font-color);
 }
 html, body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-image: url(/assets/imgs/svg/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
