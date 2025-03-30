@@ -1,3 +1,16 @@
-<app-card-servico
-img="assets/imgs/png/adm.png"
-></app-card-servico>
+<div class="container">
+    <div class="header">
+        <span class="first">Nossos</span>
+        <span class="last">serviços</span>
+    </div>
+    <div class="grid-services">
+        <div class="linha" *ngFor="let linha of linhas">
+          <app-card-services
+            *ngFor="let servico of linha"
+            [img]="servico.img"
+            [textPrimary]="servico.textPrimary"
+            [textSecondary]="servico.textSecondary"
+          ></app-card-services>
+        </div>
+      </div>
+</div>

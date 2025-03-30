@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        span{
+            font-size: 52px;
+        }        
+        .first{
+            font-weight: 200;
+        }
+        .last{
+            font-weight: 600;
+        }
+    }
+    .grid-services {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+      }
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+app-card-services {
+    flex: 1 1 200px; // cresce, encolhe, mínimo 200px
+    max-width: 225px;
+  }
+}
