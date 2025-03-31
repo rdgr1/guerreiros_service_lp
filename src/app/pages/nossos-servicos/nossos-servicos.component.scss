@@ -11,7 +11,7 @@
         align-items: center;
         gap: 10px;
         span{
-            font-size: 52px;
+            font-size: clamp(20px,5vw,50px);
         }        
         .first{
             font-weight: 200;
