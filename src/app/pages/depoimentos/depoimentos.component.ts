@@ -20,37 +20,37 @@ export class DepoimentosComponent {
   }
   depoimentos = [
     {
-      img: 'assets/imgs/svg/card-beneficios/pic1.svg',
+      img: 'assets/imgs/svg/cards-beneficios/pic1.svg',
       name: 'João Abreu Silva',
       rating: 5,
       depoiment: 'Atendimento impecável e fácil de solicitar um serviço, estou 100% satisfeito!!!'
     },
     {
-      img: 'assets/imgs/svg/card-beneficios/pic2.svg',
+      img: 'assets/imgs/svg/cards-beneficios/pic2.svg',
       name: 'Lucas Abreu',
       rating: 5,
       depoiment: 'Profissionais já vieram uniformizados e equipados, uma empresa bem organizada.'
     },
     {
-      img: 'assets/imgs/svg/card-beneficios/pic3.svg',
+      img: 'assets/imgs/svg/cards-beneficios/pic3.svg',
       name: 'Carla Pereira Simões',
       rating: 5,
       depoiment: 'Profissionais que solucionaram meu serviço sem burocracia, recomendo.'
     },
     {
-      img: 'assets/imgs/svg/card-beneficios/pic4.svg',
+      img: 'assets/imgs/svg/cards-beneficios/pic4.svg',
       name: 'Fernanda Matos',
       rating: 4,
       depoiment: 'Equipe muito bem treinada, mas o atendimento no início foi um pouco demorado.'
     },
     {
-      img: 'assets/imgs/svg/card-beneficios/pic5.svg',
+      img: 'assets/imgs/svg/cards-beneficios/pic5.svg',
       name: 'André Vilela',
       rating: 5,
       depoiment: 'Tudo certo, pessoal super ágil e educado.'
     },
     {
-      img: 'assets/imgs/svg/card-beneficios/pic6.svg',
+      img: 'assets/imgs/svg/cards-beneficios/pic6.svg',
       name: 'Natália Gonçalves',
       rating: 4,
       depoiment: 'Boa experiência no geral, recomendo.'
