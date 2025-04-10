@@ -1,0 +1,15 @@
+<div class="carousel-container">
+    <button class="arrow left" (click)="scrollLeft()">←</button>
+  
+    <div class="carousel" #carousel>
+      <app-card-avaliation
+        *ngFor="let dep of depoimentos"
+        [img]="dep.img"
+        [name]="dep.name"
+        [rating]="dep.rating"
+        [depoiment]="dep.depoiment"
+      ></app-card-avaliation>
+    </div>
+  
+    <button class="arrow right" (click)="scrollRight()">→</button>
+  </div>
