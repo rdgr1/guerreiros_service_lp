@@ -5,10 +5,11 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { NossosServicosComponent } from './pages/nossos-servicos/nossos-servicos.component';
 import { BeneficiosComponent } from "./pages/beneficios/beneficios.component";
 import { DepoimentosComponent } from "./pages/depoimentos/depoimentos.component";
+import { FormularioOrcamentoComponent } from "./pages/formulario-orcamento/formulario-orcamento.component";
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, InicioComponent, NossosServicosComponent, CommonModule, BeneficiosComponent, DepoimentosComponent],
+  imports: [NavbarComponent, InicioComponent, NossosServicosComponent, CommonModule, BeneficiosComponent, DepoimentosComponent, FormularioOrcamentoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
