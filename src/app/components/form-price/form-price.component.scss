@@ -4,4 +4,14 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    app-input-wrapper{
+        width: 100%;
+    }
+    app-button-second{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        border-radius: 10px;
+    }
 }

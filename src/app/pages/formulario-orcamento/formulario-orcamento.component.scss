@@ -1,8 +1,10 @@
 .container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
     .header{
         display: flex;
         flex-direction: column;
@@ -24,5 +26,8 @@
     }
     .content{
         display: flex;
+    }   
+    .footer{
+        width: 100%;
     }
 }

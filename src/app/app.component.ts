@@ -6,6 +6,7 @@ import { NossosServicosComponent } from './pages/nossos-servicos/nossos-servicos
 import { BeneficiosComponent } from "./pages/beneficios/beneficios.component";
 import { DepoimentosComponent } from "./pages/depoimentos/depoimentos.component";
 import { FormularioOrcamentoComponent } from "./pages/formulario-orcamento/formulario-orcamento.component";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
