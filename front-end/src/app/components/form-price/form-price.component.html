@@ -5,7 +5,8 @@
         autocomplete="number" min-lenth="6" required></app-input-wrapper>
     <app-input-wrapper formControlName="email" inputName="Email" label="Email"type="email" placeholder="Insira seu melhor email"
         autocomplete="email" min-lenth="6" required></app-input-wrapper>
-    <app-button-second
-    text="Enviar"
-    ></app-button-second>
+        <app-button-second
+        text="Enviar"
+        (click)="onSubmit()"
+      ></app-button-second>
 </form>
