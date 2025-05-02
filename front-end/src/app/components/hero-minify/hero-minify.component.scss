@@ -1,40 +1,83 @@
-.container{
+.container {
+    /* para ocupar quase toda a largura em telas pequenas */
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
     gap: 30px;
-    p{
-        text-align: center;
-        font-weight: 200;
-        font-size: clamp(5px,5vw,15px);
+  
+    /* força quebra de texto “a qualquer custo” */
+    p,
+    li,
+    h2,
+    h3,
+    h4,
+    .txt-gradient span {
+      white-space: normal;            
+      overflow-wrap: break-word;      
+      word-break: break-all;          
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
     }
-    h2{
-        font-size: clamp(20px,5vw,27px);
+  
+    p {
+      text-align: center;
+      font-weight: 200;
+      /* min 14px, sobe até 16px conforme viewport */
+      font-size: clamp(14px, 5vw, 16px);
     }
-    h3{
-        background: linear-gradient(45deg, #87de92, #19c319);
-        -webkit-background-clip: text; /* Suporte para WebKit */
-        background-clip: text;         /* Padrão */
-        color: transparent; 
-        font-weight: 200;
-        font-size: clamp(18px,5vw,19px);
+  
+    h2 {
+      /* min 22px, até 27px */
+      font-size: clamp(22px, 5vw, 27px);
     }
-    h4{
-        font-size: clamp(18px,15vw,26px);
+  
+    h3 {
+      background: linear-gradient(45deg, #87de92, #19c319);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 200;
+      font-size: clamp(20px, 5vw, 22px);
     }
-    li{
-        font-weight: 100;
-        font-size: clamp(5px,5vw,15px);
+  
+    h4 {
+      /* min 18px, até 26px */
+      font-size: clamp(18px, 5vw, 26px);
     }
-    .txt-gradient{
-        span{
-            font-size: 20px;
-        }
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+  
+    li {
+      font-weight: 100;
+      /* min 12px, até 14px */
+      font-size: clamp(12px, 4vw, 14px);
     }
-}
+  
+    .txt-gradient {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+  
+      span {
+        /* min 16px, até 20px */
+        font-size: clamp(16px, 4vw, 20px);
+      }
+    }
+  
+    /* ajuste extra para muito mobile (< 360px) */
+    @media (max-width: 360px) {
+      gap: 20px;
+  
+      p   { font-size: 16px; }
+      li  { font-size: 14px; }
+      h2  { font-size: 24px; }
+      h4  { font-size: 20px; }
+      .txt-gradient span { font-size: 18px; }
+    }
+  }

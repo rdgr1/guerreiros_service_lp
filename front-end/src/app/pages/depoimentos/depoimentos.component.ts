@@ -4,20 +4,27 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-depoimentos',
-  imports: [CardAvaliationComponent, CommonModule],
+  imports: [ CardAvaliationComponent, CommonModule ],
   templateUrl: './depoimentos.component.html',
-  styleUrl: './depoimentos.component.scss'
+  styleUrls:   ['./depoimentos.component.scss']  // ← note o "s" no final
 })
 export class DepoimentosComponent {
   @ViewChild('carousel', { static: false }) carousel!: ElementRef;
 
   scrollLeft() {
-    this.carousel.nativeElement.scrollBy({ left: -300, behavior: 'smooth' });
+    const cardWidth = this.carousel.nativeElement
+      .querySelector('app-card-avaliation')?.offsetWidth || 250;
+    this.carousel.nativeElement
+      .scrollBy({ left: -cardWidth - 16, behavior: 'smooth' });
   }
-
+  
   scrollRight() {
-    this.carousel.nativeElement.scrollBy({ left: 300, behavior: 'smooth' });
+    const cardWidth = this.carousel.nativeElement
+      .querySelector('app-card-avaliation')?.offsetWidth || 250;
+    this.carousel.nativeElement
+      .scrollBy({ left:  cardWidth + 16, behavior: 'smooth' });
   }
+  
   depoimentos = [
     {
       img: 'assets/imgs/svg/cards-beneficios/pic1.svg',

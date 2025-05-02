@@ -4,15 +4,15 @@
     align-items: center;
     justify-content: center;
     background-color: var(--secondary);
-    width: 150px;
-    height: 150px;
+    width: clamp(120px, 15vw, 150px);
+    height: clamp(120px, 15vw, 150px);
     border-radius: 12px;
     img{
-        width: 65px;
-        height: 65px;
+        width: clamp(45px, 10vw, 75px);
+        height: clamp(45px, 10vw, 75px);
     }
     .text{
-        font-size: 16px;
+        font-size: clamp(10px, 4vw, 15px);
         .textPrimary{
             font-weight: 200;
         }

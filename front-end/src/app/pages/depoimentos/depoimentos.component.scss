@@ -1,39 +1,49 @@
 .carousel-container {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 16px;
-  }
-  
-  .arrow {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-    z-index: 2;
-  }
-  
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    gap: 16px;
-    padding: 16px 0;
-    scroll-snap-type: x mandatory;
-    width: 100%;
-  }
-  
-  .carousel::-webkit-scrollbar {
-    display: none;
-  }
-  
-  app-card-avaliation {
-    flex: 0 0 auto;
-    width: 250px;
-    scroll-snap-align: start;
-  }
+  position: relative;
+  overflow: hidden;      /* continua escondendo o excesso de cards */
+  width: 280px;          /* ou o tamanho que você definiu */
+  padding: 0 16px;       /* garante um espaço interno para as setas */
+}
+
+.arrow {
+  position: absolute;    
+  top: 50%;              
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow.left  { 
+  left: 16px;            /* fixa a seta a 16px da borda interna esquerda */ 
+}
+.arrow.right { 
+  right: 16px;           /* fixa a seta a 16px da borda interna direita */ 
+}
+button{
+  color: black;
+  font-size: 20px;
+}
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;       /* força uma única linha */
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+  /* esconde scrollbars em todos os browsers */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+app-card-avaliation {
+  flex: 0 0 auto;
+  width: 250px;
+  scroll-snap-align: start;
+}
