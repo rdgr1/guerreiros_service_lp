@@ -1,6 +1,11 @@
-<div class="carousel-container">
-    <button class="arrow left" (click)="scrollLeft()"><</button>
-  
+<!-- depoimentos.component.html -->
+<div class="container">
+  <div
+    class="carousel-container"
+    (mouseenter)="pauseAutoplay()"
+    (mouseleave)="resumeAutoplay()"
+  >
+    <button class="arrow left" (click)="scrollLeft()">‹</button>
     <div class="carousel" #carousel>
       <app-card-avaliation
         *ngFor="let dep of depoimentos"
@@ -10,6 +15,6 @@
         [depoiment]="dep.depoiment"
       ></app-card-avaliation>
     </div>
-  
-    <button class="arrow right" (click)="scrollRight()">></button>
+    <button class="arrow right" (click)="scrollRight()">›</button>
   </div>
+</div>

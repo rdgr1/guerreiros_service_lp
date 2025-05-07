@@ -1,13 +1,13 @@
 .container{
-    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     min-height: 113px;
     background: linear-gradient(45deg,#6FECFF,#02253C);
-    gap: 100px;
+    gap: clamp(25px,3vw,100px);
     .logoSecondary span{
-        width: 80px;
+        width: clamp(30px,7vw,80px);
     }
     .redes-sociais {
         display: flex;
@@ -20,11 +20,14 @@
             justify-content: center;
             align-items: center;
             flex-direction: row;
-            width: 32px;
+           img{
+            width: clamp(16px,3vw,30px);
+           }
         }
     }
     h3{
         font-weight: 600;
+        font-size: clamp(12px,3vw,15px);
     }
     p{
         font-weight: 200;
@@ -32,5 +35,13 @@
     .aviso {
         text-align: center;
         font-weight: 600;
+        p{
+            font-size: clamp(7px,2.5vw,15px);
+        }
+    }
+    @media (max-width: 900px) {
+        .contatos{
+            display: none;
+        }
     }
 }

@@ -4,32 +4,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    .nav{
+        width: 100%;
+    }
     #depoimentos{
         background-color: white;
         z-index: 1;
     }
-    .nav{
-        width: 100%;
-    }
     .icons-fly{
         .whatsapp{
             position: fixed;
-            top: 250px;
+            top: 625px;
             left: 33px;
             cursor: pointer;
             z-index: 1000;
             svg{
                 width: clamp(40px,3vw,60px);
+                height: clamp(40px,3vw,60px);;
             }
         }
         .up {
             position: fixed;
-            top: 620px;
+            top: 625px;
             right: 33px;
             cursor: pointer;
             svg { 
                 width: clamp(40px,3vw,60px);
+                height: clamp(40px,3vw,60px);;
                 height: 60px;
                 fill: #50b0c3;
                 z-index: 1000;
@@ -49,6 +50,9 @@
                 }
             }
         }
+    }
+    section{
+        margin-top: 50px;
     }
     app-formulario-orcamento{
         width: 100%;
