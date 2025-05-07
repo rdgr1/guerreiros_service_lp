@@ -17,19 +17,15 @@
       cursor: pointer;
   
       .logo-img {
-        width: clamp(60px, 10vw, 135px); // era 10vh
+        width: clamp(60px, 7vw, 110px); // era 10vh
         margin: 5px 0px;
       }
   
       .first {
-        font-size: clamp(14px, 2vw, 26px); // já estava certo
-        font-weight: 600;
+        font-size: clamp(12px, 2vw, 23px); // já estava certo
+        font-weight: 700;
       }
-  
-      .last {
-        font-size: clamp(14px, 1.6vw, 20px); // deixei responsivo tb
-        font-weight: 200;
-      }
+
     }
   
     .navbar-nav {
